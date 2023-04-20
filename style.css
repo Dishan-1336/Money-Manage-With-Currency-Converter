@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+/* ----------------------------- LOGIN FORM ------------------------- */
+
+.login-form {
+  border: 1px solid black;
+  width: 25%;
+  height: 200px;
+  padding: 3rem;
+  margin: 15% auto;
+  border-radius: 10px;
+  box-shadow: #666 2px 2px 2px 2px;
+}
+
+.login-form input {
+  width: 100%;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.login {
+  font-size: 1.7rem;
+}
+
+.login-btn {
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+  font-size: 1.5rem;
+  background-color: #594394;
+  color: white;
+  cursor: pointer;
+}
+
+/* ------------------------------ NAVBAR ------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.logout-btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.digital-watch {
+  width: 25%;
+  margin: 1rem auto;
+  font-size: 3rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(222, 241, 227);
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  padding: 1 rem;
+  justify-content: space-around;
+}
+
+/* ---------------------------------- Movements ------------------------------------ */
+
+.movements {
+  width: 35%;
+  grid-row: 2 / span 2;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+  margin: 10px;
+  height: 430px;
+}
+
+.movements-row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movements-type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.movement-date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.movements-type-income {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.movements-type-expense {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.movements-value {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+/* ---------------------------- Currency Converter ------------------------------ */
+
+.wrapper {
+  width: 25%;
+  border: 1px solid rgb(141, 139, 139);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.app-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.app-icon {
+  width: 9.37em;
+}
+.app-title {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+input#amount:focus {
+  color: #9873fe;
+  border-color: #9873fe;
+}
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+.currency-select {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #9873fe;
+  color: #ffffff;
+}
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+.convert-button {
+  font-size: 1em;
+  width: 100%;
+  background-color: #9873fe;
+  padding: 1em 0;
+  margin-top: 2em;
+  border-radius: 0.3em;
+  color: #ffffff;
+  font-weight: 600;
+}
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1em;
+  color: #02002c;
+  background-color: #e5dbff;
+  padding: 0.8em 0;
+}
+
+/* --------------------------- FOR ADDING MOVEMENT ------------------------ */
+
+.operation-add-movement {
+  width: 30%;
+  border: 1px solid rgb(141, 139, 139);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 160px;
+}
+
+.operation-add-movement h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+
+.label-type,
+.label-amount {
+  font-size: 1.5rem;
+}
+
+.type-select {
+  margin: 10px;
+  font-size: 5rem;
+}
+
+.type-select {
+  width: 50%;
+  padding: 0.6em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #378e51;
+  color: #ffffff;
+}
+
+.input-amount {
+  width: 45%;
+}
+
+.add-movement-button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  background-color: #378e51;
+  color: white;
+}

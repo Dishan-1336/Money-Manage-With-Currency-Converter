@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Money Manager</title>
+  </head>
+  <body>
+    <!-- Login form -->
+    <div class="login-form">
+      <label for="username" class="login">User Name</label>
+      <input type="text" class="login login-username" />
+      <label for="password" class="login">Password</label>
+      <input type="password" class="login login-password" /> <br />
+      <button class="login-btn">Login</button>
+    </div>
+
+    <!-- After Login interface -->
+    <div class="container">
+      <nav>
+        <p class="welcome">Log in to get started</p>
+
+        <button class="logout-btn">&rarr;</button>
+      </nav>
+
+      <!-- DIGITAL WATCH WITH DATE -->
+      <div class="digital-watch">
+        <span class="time"></span><span class="date"></span>
+      </div>
+
+      <!-- MOVEMENTS -->
+      <div class="main">
+        <div class="movements">
+          <div class="movements-row">
+            <div class="movements-type movements-type-income">2 income</div>
+            <div class="movements-date">3 days ago</div>
+            <div class="movements-value">4 000€</div>
+          </div>
+          <div class="movements-row">
+            <div class="movements-type movements-type-expense">2 expense</div>
+            <div class="movements-date">3 days ago</div>
+            <div class="movements-value">4 000€</div>
+          </div>
+        </div>
+
+        <!-- ADD MOVEMENTS -->
+        <div class="operation-add-movement">
+          <h2>Add Movement</h2>
+          <span class="label-type" for="type">Type: </span>
+          <select name="" id="" class="type-select">
+            <option value="INCOME">INCOME</option>
+            <option value="EXPENSE">EXPENSE</option>
+          </select>
+          <br />
+          <span class="label-amount">Amount: </span>
+          <input class="input-amount" type="number" /> <br />
+          <button class="add-movement-button">ADD</button>
+        </div>
+
+        <!-- CURRENCY CONVERTER -->
+        <div class="wrapper">
+          <div class="app-details">
+            <img src="app-icon.svg" class="app-icon" />
+            <h1 class="app-title">Currency Converter</h1>
+            <button class="convert-button auto-convert-button">
+              Auto(Convert all the Account Balance)
+            </button>
+            <button class="convert-button manual-convert-button">
+              Manual(Convert Manual Amount)
+            </button>
+          </div>
+          <label for="amount" class="manual-amount">Amount:</label>
+          <input type="number" id="amount" value="100" class="manual-amount" />
+          <div class="dropdowns">
+            <select class="currency-select" id="from-currency-select"></select>
+            <select class="currency-select" id="to-currency-select"></select>
+          </div>
+          <button class="convert-button converter">Convert</button>
+          <p id="result"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scipt With Array Of Supported Country Codes -->
+    <script src="currency-codes.js"></script>
+    <!-- Script with API Key -->
+    <script src="api-key.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
